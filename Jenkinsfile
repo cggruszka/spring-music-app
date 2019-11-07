@@ -13,7 +13,7 @@ node {
   // ------------------------------- Define Variables ------------------------------------------------
     SPRING_APP = "spring-music-app"
     APPLICATION_NAME = "${BUILD_USER_FIRST_NAME}-${SPRING_APP}"
-    DEPLOY_SPACE = "Development"
+    DEPLOY_SPACE = "development"
     PCF_ORG = "ChrisGDevSecOps"
     ARTIFACT_URL = "http://3.17.145.188:8081/artifactory/chicago-workshop/"
     SONARQUBE_ENDPOINT = "http://18.188.152.100:9000"
