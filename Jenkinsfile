@@ -61,7 +61,7 @@ node {
       // Download our Spring Application Artifacts from Artifactory
       stage("Pull Spring Music Artifacts") {
         sh '''
-          curl -u${ART_USERNAME}:${ART_PASSWORD} -O "${ARTIFACT_URL}${SPRING_APP}.zip"
+          curl --show-error --fail -u${ART_USERNAME}:${ART_PASSWORD} -O "${ARTIFACT_URL}${SPRING_APP}.zip"
           unzip ${SPRING_APP}.zip
           '''
       }
